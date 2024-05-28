@@ -1,24 +1,26 @@
 import React from 'react';
 
+import '../styles/Services.css'
+
 const services = [
   {
     image: 'service1.jpg',
-    title: 'Servicio 1',
+    title: 'Bodas',
     description: 'Descripción del servicio 1',
   },
   {
     image: 'service2.jpg',
-    title: 'Servicio 2',
+    title: 'Eventos Empresariales',
     description: 'Descripción del servicio 2',
   },
   {
     image: 'service3.jpg',
-    title: 'Servicio 3',
+    title: 'Veladas Sociales',
     description: 'Descripción del servicio 3',
   },
   {
     image: 'service4.jpg',
-    title: 'Servicio 4',
+    title: 'Cumpleaños',
     description: 'Descripción del servicio 4',
   },
 ];
