@@ -8,6 +8,8 @@ import './App.css'
 
 
 import React from 'react';
+
+
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
 import Story from './components/Story';
@@ -17,7 +19,9 @@ import Services from './components/Services';
 import Gallery from './components/Gallery';
 
 
-
+/* 
+import { Navbar, Banner, Story, ContactForm, Footer, Services, Gallery} from './components';
+ */
 
 
 
@@ -28,19 +32,17 @@ function App() {
     <>
 
       <Navbar />
-     {/*  <Banner /> */}
-     <Banner />
+      <Banner />
       <Services />
-     {/*  <CarouselSection /> */}
       <Story />
       <Gallery />
       <ContactForm />
       <Footer />
-    
 
 
 
-{/* 
+
+      {/* 
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />

@@ -6,7 +6,7 @@
     display: flex; /* Utilizar flexbox para centrar el contenido */
     justify-content: center; /* Centrar horizontalmente */
     align-items: center; /* Centrar verticalmente */
-    color: white; /* Color del texto */
+    color: #d88405; /* Color del texto */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto para mejor legibilidad */
   }
   

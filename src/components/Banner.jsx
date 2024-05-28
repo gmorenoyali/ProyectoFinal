@@ -5,7 +5,7 @@ import backgroundImage from '../assets/img/background.webp'; // Asegúrate de te
 const Banner = () => {
   return (
     <section className="banner">
-      <h1>GiiO</h1>
+      <h1>Sabor Divino Catering</h1>
     </section>
   );
 };

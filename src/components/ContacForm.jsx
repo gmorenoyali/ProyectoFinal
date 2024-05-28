@@ -16,13 +16,13 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Manejar el envío del formulario
+    // Manejar el envío del formulario  
   };
 
   return (
-    <section className="contact-form">
+    <section className="contact-form"id="ContacForm">
       <h2>Contacto</h2>
-      <p>Por favor, completa el siguiente formulario para ponerte en contacto con nosotros.</p>
+      <p>Completa el siguiente formulario para ponerte en contacto con nosotros.</p>
       <form onSubmit={handleSubmit}>
         <label>
           Nombre:
@@ -36,10 +36,10 @@ const ContactForm = () => {
           Teléfono:
           <input type="tel" name="phone" value={formData.phone} onChange={handleChange} />
         </label>
-        <label>
+       {/*  <label>
           Fecha:
           <input type="date" name="date" value={formData.date} onChange={handleChange} />
-        </label>
+        </label> */}
         <button type="submit">Enviar</button>
       </form>
     </section>

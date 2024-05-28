@@ -5,7 +5,6 @@ import ct1 from '../assets/gallery/ct1.jpg'
 import ct2 from '../assets/gallery/ct2.jpg'
 import ct3 from '../assets/gallery/ct3.jpg'
 import ct4 from '../assets/gallery/ct4.jpg'
-
 import ct5 from '../assets/gallery/ct5.jpeg'
 import ct6 from '../assets/gallery/ct6.jpg'
 import ct7 from '../assets/gallery/ct7.jpg'

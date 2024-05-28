@@ -30,10 +30,10 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-logo-container">
-        <img src={logo} alt="Logo" className="footer-logo" />
+       <a href="#Navbar"> <img src={logo} alt="Logo" className="footer-logo" /></a>       
       </div>
       <div className="footer-content">
-        <div>© 2024 Mi Empresa</div>
+        <div>© 2024 Sabor Divino Catering</div>
         <div className="social-links">
           <a href="https://facebook.com">Facebook</a>
           <a href="https://www.instagram.com/sisazcocina/" target="_blank">Instagram</a>

@@ -32,9 +32,10 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="services">
+    
+    <section className="services"id="Services">
       {services.map((service, index) => (
-        <div key={index} className="service-card">
+        <div key={index} className="service-card">          
           <img src={service.image} alt={service.title} />
           <h3>{service.title}</h3>
           <p>{service.description}</p>
