@@ -14,6 +14,7 @@ import Story from './components/Story';
 import ContactForm from './components/ContacForm';
 import Footer from './components/Footer';
 import Services from './components/Services';
+import Gallery from './components/Gallery';
 
 
 
@@ -32,6 +33,7 @@ function App() {
       <Services />
      {/*  <CarouselSection /> */}
       <Story />
+      <Gallery />
       <ContactForm />
       <Footer />
     
