@@ -1,0 +1,16 @@
+.banner {
+    background-image: url('../assets/img/background.webp'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Cubrir todo el contenedor */
+    background-position: center; /* Centrar la imagen */
+    height: 100vh; /* Altura del banner: 100% de la altura de la ventana */
+    display: flex; /* Utilizar flexbox para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    color: white; /* Color del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto para mejor legibilidad */
+  }
+  
+  .banner h1 {
+    font-size: 4rem; /* Tamaño de la fuente */
+    margin: 0; /* Sin margen */
+  }

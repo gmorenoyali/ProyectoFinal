@@ -1,11 +1,12 @@
 import React from 'react';
+import '../styles/Banner.css';
+import backgroundImage from '../assets/img/background.webp'; // Asegúrate de tener una imagen de fondo en esta ruta
 
 const Banner = () => {
   return (
-    <div className="banner">
-      <img src="banner-image.jpg" alt="Banner" />
-      <div className="banner-text">Texto sobre la imagen</div>
-    </div>
+    <section className="banner">
+      <h1>GiiO</h1>
+    </section>
   );
 };
 

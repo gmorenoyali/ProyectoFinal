@@ -28,6 +28,7 @@ function App() {
 
       <Navbar />
      {/*  <Banner /> */}
+     <Banner />
       <Services />
      {/*  <CarouselSection /> */}
       <Story />
