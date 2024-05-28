@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../styles/Story.css'
+
 const Story = () => {
   return (
     <section className="story">

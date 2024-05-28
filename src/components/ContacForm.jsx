@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import '../styles/ContactForm.css'
+
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -20,6 +22,7 @@ const ContactForm = () => {
   return (
     <section className="contact-form">
       <h2>Contacto</h2>
+      <p>Por favor, completa el siguiente formulario para ponerte en contacto con nosotros.</p>
       <form onSubmit={handleSubmit}>
         <label>
           Nombre:
