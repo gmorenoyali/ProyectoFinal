@@ -36,9 +36,9 @@ const Footer = () => {
         <div>© 2024 Mi Empresa</div>
         <div className="social-links">
           <a href="https://facebook.com">Facebook</a>
-          <a href="https://instagram.com">Instagram</a>
-          <a href="https://tiktok.com">TikTok</a>
-          <a href="mailto:info@example.com">Correo</a>
+          <a href="https://www.instagram.com/sisazcocina/" target="_blank">Instagram</a>
+          <a href="https://www.tiktok.com/@santiagoisazachef" target="_blank">TikTok</a>
+          <a href="mailto:santiagoisazachef@gmail.com">Correo</a>
         </div>
       </div>
     </footer>
