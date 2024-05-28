@@ -2,26 +2,31 @@ import React from 'react';
 
 import '../styles/Services.css'
 
+import Boda from '../assets/img/boda.jpg';
+import EventoEmpresarial from '../assets/img/eventoEmpresarial.jpg';
+import VeladaSocial from '../assets/img/veladaSocial.jpg';
+import Cumpleaños from '../assets/img/cumpleaños.jpg';
+
 const services = [
   {
-    image: 'service1.jpg',
+    image: Boda,
     title: 'Bodas',
-    description: 'Descripción del servicio 1',
+    description: 'Ofrecemos menús personalizados y un servicio impecable para hacer tu boda inolvidable. Disfruta de una experiencia culinaria exquisita sin preocupaciones.',
   },
   {
-    image: 'service2.jpg',
+    image: EventoEmpresarial,
     title: 'Eventos Empresariales',
-    description: 'Descripción del servicio 2',
+    description: 'Brindamos menús personalizados y un servicio profesional para tus eventos corporativos, asegurando una experiencia culinaria excepcional y sin estrés.',
   },
   {
-    image: 'service3.jpg',
+    image: VeladaSocial,
     title: 'Veladas Sociales',
-    description: 'Descripción del servicio 3',
+    description: 'Ofrecemos menús personalizados y un servicio excepcional para tus eventos sociales, garantizando una experiencia culinaria memorable y sin preocupaciones.',
   },
   {
-    image: 'service4.jpg',
+    image: Cumpleaños,
     title: 'Cumpleaños',
-    description: 'Descripción del servicio 4',
+    description: 'Ofrecemos menús a medida y un servicio excepcional para tus fiestas de cumpleaños, garantizando una experiencia gastronómica placentera y sin preocupaciones.',
   },
 ];
 
