@@ -1,32 +1,38 @@
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #333;
-    color: #fff;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  ul {
-    display: flex;
-    list-style: none;
-  }
-  
-  li {
-    margin-left: 1.5rem;
-  }
-  
-  li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  li a:hover {
-    color: #f0a500;
-  }
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Espacio entre los elementos */
+  align-items: center; /* Centrado vertical */
+  padding: 1rem 2rem; /* Espaciado interno */
+  background-color: #333; /* Color de fondo */
+  color: #fff; /* Color del texto */
+}
+
+.navbar-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 50px; /* Tamaño del logo */
+  margin-right: 1rem; /* Espacio a la derecha del logo */
+}
+
+.navbar-menu {
+  list-style-type: none; /* Eliminar viñetas */
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-item {
+  margin-right: 1rem; /* Espacio entre elementos del menú */
+}
+
+.navbar-link {
+  text-decoration: none; /* Quitar subrayado */
+  color: inherit; /* Heredar color */
+}
+
+.navbar-link:hover {
+  color: #f0a500; /* Cambio de color al pasar el cursor */
+}
