@@ -1,0 +1,46 @@
+
+
+  /* _______________________________ */
+
+  .footer {
+    background-color: #333; /* Fondo del footer */
+    color: #fff; /* Color del texto del footer */
+    padding: 2rem 0; /* Espaciado interno del footer */
+    display: flex; /* Utilizar flexbox para alinear los elementos */
+    align-items: center; /* Centrar verticalmente los elementos */
+    justify-content: center; /* Centrar horizontalmente los elementos */
+  }
+  
+  .footer-logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem; /* Espacio a la derecha del logo */
+  }
+  
+  .footer-logo {
+    width: 50px; /* Tamaño del logo del footer */
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar el contenido horizontalmente */
+  }
+  
+  .footer-content div {
+    margin-bottom: 1rem; /* Espacio entre los elementos del contenido */
+  }
+  
+  .social-links {
+    display: flex;
+  }
+  
+  .social-links a {
+    color: #fff; /* Color de los enlaces de redes sociales */
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+    margin: 0 0.5rem; /* Espacio horizontal entre los enlaces */
+  }
+  
+  .social-links a:hover {
+    color: #f0a500; /* Cambio de color al pasar el cursor sobre los enlaces */
+  }
