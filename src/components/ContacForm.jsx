@@ -1,48 +1,88 @@
 import React, { useState } from 'react';
-
-import '../styles/ContactForm.css'
+import '../styles/ContactForm.css';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    date: '',
+    date: ''
   });
 
+  const [submittedData, setSubmittedData] = useState([]);
+
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Manejar el envío del formulario  
+    setSubmittedData([...submittedData, formData]);
+    setFormData({ name: '', email: '', phone: '', date: '' });
   };
 
   return (
-    <section className="contact-form"id="ContacForm">
-      <h2>Contacto</h2>
-      <p>Completa el siguiente formulario para ponerte en contacto con nosotros.</p>
+    <div className="contact-form" id="ContacForm">
+      <h2>Formulario de Contacto</h2>
       <form onSubmit={handleSubmit}>
-        <label>
-          Nombre:
-          <input type="text" name="name" value={formData.name} onChange={handleChange} />
-        </label>
-        <label>
-          Correo:
-          <input type="email" name="email" value={formData.email} onChange={handleChange} />
-        </label>
-        <label>
-          Teléfono:
-          <input type="tel" name="phone" value={formData.phone} onChange={handleChange} />
-        </label>
-       {/*  <label>
-          Fecha:
-          <input type="date" name="date" value={formData.date} onChange={handleChange} />
-        </label> */}
+        <div className="form-group">
+          <label htmlFor="name">Nombre:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Correo:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="phone">Teléfono:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="date">Fecha:</label>
+          <input
+            type="date"
+            id="date"
+            name="date"
+            value={formData.date}
+            onChange={handleChange}
+            required
+          />
+        </div>
         <button type="submit">Enviar</button>
       </form>
-    </section>
+      <div className="submitted-data">
+        <h3>Datos enviados:</h3>
+        <ol>
+          {submittedData.map((data, index) => (
+            <li key={index}>
+              <strong>Nombre:</strong> {data.name}, <strong>Correo:</strong> {data.email}, <strong>Teléfono:</strong> {data.phone}, <strong>Fecha:</strong> {data.date}
+            </li>
+          ))}
+        </ol>
+      </div>
+    </div>
   );
 };
 
